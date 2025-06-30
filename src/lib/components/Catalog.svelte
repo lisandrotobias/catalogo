@@ -27,15 +27,15 @@
                 return;
             }
             
-            // Configuración específica según el dispositivo
+            // Configuración específica para formato A4 (proporción 210:297)
             const config = {
-                width: isMobile ? 400 : 550, // Más ancho en desktop
-                height: isMobile ? 600 : 733, // Más alto en desktop
+                width: isMobile ? 320 : 600,  // Ancho A4 proporcionado
+                height: isMobile ? 453 : 849, // Alto A4 proporcionado (210:297 ratio)
                 size: "fixed", 
-                minWidth: isMobile ? 300 : 500,
-                maxWidth: isMobile ? 500 : 1000,
-                minHeight: isMobile ? 450 : 667,
-                maxHeight: isMobile ? 700 : 1000,
+                minWidth: isMobile ? 280 : 500,
+                maxWidth: isMobile ? 400 : 700,
+                minHeight: isMobile ? 396 : 707, // Manteniendo proporción A4
+                maxHeight: isMobile ? 566 : 990, // Manteniendo proporción A4
                 drawShadow: true,
                 flippingTime: isMobile ? 1000 : 1200,
                 usePortrait: isMobile, // Esto es clave: true para móvil (una página), false para desktop (dos páginas)
@@ -47,7 +47,7 @@
             };
             
             console.log("Modo:", isMobile ? "móvil" : "desktop");
-            console.log("Configuración:", config);
+            console.log("Configuración A4:", config);
             
             // Inicializar PageFlip con la sintaxis correcta
             pageFlip = new window.St.PageFlip(book, config);
@@ -107,85 +107,69 @@
         
         <!-- Contenedor de libro con id "book" como en la documentación -->
         <div id="book" bind:this={book} class="book">
-            <!-- Estructura exacta según la documentación -->
+            <!-- Páginas del trabajo integrador de Selena Sosa -->
             <div class="my-page" data-density="hard">
-                <img src="/images/catalogo_01.jpg" alt="Portada" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0001.jpg" alt="Página 1" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_02.jpg" alt="Página 2" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0002.jpg" alt="Página 2" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_03.jpg" alt="Página 3" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0003.jpg" alt="Página 3" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_04.jpg" alt="Página 4" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0004.jpg" alt="Página 4" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_05.jpg" alt="Página 5" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0005.jpg" alt="Página 5" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_06.jpg" alt="Página 6" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0006.jpg" alt="Página 6" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_07.jpg" alt="Página 7" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0007.jpg" alt="Página 7" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_08.jpg" alt="Página 8" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0008.jpg" alt="Página 8" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_09.jpg" alt="Página 9" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0009.jpg" alt="Página 9" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_10.jpg" alt="Página 10" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0010.jpg" alt="Página 10" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_11.jpg" alt="Página 11" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0011.jpg" alt="Página 11" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_12.jpg" alt="Página 12" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0012.jpg" alt="Página 12" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_13.jpg" alt="Página 13" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0013.jpg" alt="Página 13" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_14.jpg" alt="Página 14" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0014.jpg" alt="Página 14" />
             </div>
             
             <div class="my-page">
-                <img src="/images/catalogo_15.jpg" alt="Página 15" />
-            </div>
-            
-            <div class="my-page">
-                <img src="/images/catalogo_16.jpg" alt="Página 16" />
-            </div>
-            
-            <div class="my-page">
-                <img src="/images/catalogo_17.jpg" alt="Página 17" />
-            </div>
-            
-            <div class="my-page">
-                <img src="/images/catalogo_18.jpg" alt="Página 18" />
-            </div>
-            
-            <div class="my-page">
-                <img src="/images/catalogo_19.jpg" alt="Página 19" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0015.jpg" alt="Página 15" />
             </div>
             
             <div class="my-page" data-density="hard">
-                <img src="/images/catalogo_20.jpg" alt="Contraportada" />
+                <img src="/images/trabajo_pou/TRABAJO INTEGRADOR FINAL-SELENA SOSA_page-0016.jpg" alt="Página 16" />
             </div>
         </div>
         
@@ -213,7 +197,7 @@
     }
     
     .book {
-        /* Tamaño definido según la documentación */
+        /* Dimensiones adaptadas para formato A4 */
         margin: 0 20px;
         background-color: transparent;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -221,6 +205,8 @@
     
     .my-page {
         background-color: white;
+        /* Asegurar que mantenga la proporción A4 */
+        aspect-ratio: 210 / 297;
     }
     
     .my-page img {
@@ -228,6 +214,9 @@
         height: 100%;
         object-fit: contain;
         display: block;
+        /* Mantener calidad de imagen para documentos */
+        image-rendering: crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
     }
     
     .control-btn {
@@ -257,6 +246,10 @@
         
         i {
             font-size: 30px;
+        }
+        
+        .book {
+            margin: 0 10px;
         }
     }
 </style> 
