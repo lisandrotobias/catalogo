@@ -196,8 +196,8 @@
             // ========================================================================
             // 
             // CASO 1: CONFIGURACIÓN PARA MÓVIL (isMobile = true)
-            // - width: 340px, height: 480px (proporción 3:4 optimizada para catálogos)
-            // - minWidth: 300px, maxWidth: 400px (rango flexible)
+            // - width: 380px, height: 480px (proporción 3:4 optimizada para catálogos)
+            // - minWidth: 300px, maxWidth: 450px (rango flexible)
             // - minHeight: 420px, maxHeight: 540px
             // - flippingTime: 1000ms (más rápido para móvil)
             // - usePortrait: true (modo vertical)
@@ -218,11 +218,11 @@
             // - mobileScrollSupport: true → soporte para scroll en móviles
             // - startZIndex: 0 → z-index inicial de las páginas
             const config = {
-                width: isMobile ? 340 : 650,  // Ancho base según dispositivo
+                width: isMobile ? 380 : 650,  // Ancho base según dispositivo
                 height: isMobile ? 480 : 900,  // Alto base según dispositivo
                 size: "fixed",  // Tamaño fijo (no responsive automático)
                 minWidth: isMobile ? 300 : 550,  // Ancho mínimo permitido
-                maxWidth: isMobile ? 400 : 750,  // Ancho máximo permitido
+                maxWidth: isMobile ? 450 : 750,  // Ancho máximo permitido
                 minHeight: isMobile ? 420 : 780,  // Alto mínimo permitido
                 maxHeight: isMobile ? 540 : 1000,  // Alto máximo permitido
                 drawShadow: true,  // Dibujar sombras realistas en las páginas
@@ -1626,7 +1626,7 @@
         
         /* Libro con márgenes reducidos */
         .book {
-            margin: 0 10px;  /* Reducido de 20px a 10px */
+            margin: 0 5px;  /* Reducido para aprovechar mejor el espacio horizontal */
         }
         
         /* Controles de zoom más compactos */

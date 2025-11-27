@@ -93,7 +93,7 @@
                     <div class="tutorial-item">
                         <i class="fas fa-arrows-alt tutorial-item-icon"></i>
                         <div class="tutorial-item-content">
-                            <strong>Navegar:</strong> Desliza para cambiar de página
+                            <strong>Navegar:</strong> Toca para cambiar de página
                         </div>
                     </div>
                     
